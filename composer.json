@@ -1,0 +1,27 @@
+{
+  "name": "cyclick/test_demo",
+  "description": "Demo library for testing",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "czekusmate",
+      "email": "czekus.mate@cyclick.hu"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Cyclick\\Demo\\": "src"
+    }
+  },
+  "require": {
+    "psr/container": "1.*",
+    "php": "7.4.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.4.*"
+  },
+  "scripts": {
+    "test": "phpunit --stop-on-failure --fail-on-risky --testdox --strict-coverage --bootstrap vendor/autoload.php test/"
+  }
+}
